@@ -35,13 +35,13 @@ bot.on('message', (msg) => {
 
     switch (text) {
         case '1 корпус':
-            bot.sendPhoto(chatId, path.join(schedulePath, 'schedule_6.jpg'));
+            bot.sendPhoto(chatId, path.join(schedulePath, "firstCorpus.jpg"));
             break;
         case '2 корпус':
-            bot.sendPhoto(chatId, path.join(schedulePath, 'schedule_7.jpg'));
+            bot.sendPhoto(chatId, path.join(schedulePath, "secondCorpus.jpg"));
             break;
         case 'Расписание звонков':
-            bot.sendPhoto(chatId, path.join(schedulePath, 'schedule_8.jpg'));
+            bot.sendPhoto(chatId, path.join(schedulePath, "bellSchedule.jpg"));
             break;
             case 'Пожертвования':
                 bot.sendMessage(chatId, 'Спасибо за ваше желание поддержать! Вот ссылка на пожертвования: https://www.tinkoff.ru/rm/porokhin.nikita9/ntKCm17859');
