@@ -74,12 +74,17 @@ const notifySubscribers = (message, filePath) => {
     if (err) {
       console.error("Ошибка при получении подписчиков:", err);
     } else {
-      bot.sendPhoto(row.chat_id, filePath, 
-        {caption: message}
-    );
+      bot.sendPhoto(row.chat_id, filePath, { caption: message }, (err, res) => {
+        if (err) {
+          console.error("Ошибка при отправке фото:", err);
+        } else {
+          console.log(`Фото отправлено пользователю ${row.chat_id}`);
+        }
+      });
     }
   });
 };
+
 
 // Обработка текстовых сообщений
 // Обработка текстовых сообщений с использованием регулярных выражений
