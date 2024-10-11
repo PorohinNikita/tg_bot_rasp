@@ -5,7 +5,7 @@
   "main": "parser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "concurrently \"node bot.js\" \"node parser.js\""
+    "start": "concurrently \"node bot.js\" \"node parser.js\""
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,8 @@
     "axios": "^1.7.7",
     "cheerio": "^1.0.0",
     "node-schedule": "^2.1.1",
-    "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.66.0",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "concurrently": "^9.0.1"
